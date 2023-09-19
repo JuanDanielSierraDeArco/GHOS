@@ -1,6 +1,18 @@
 body
 {
-    color: blue;
-    text-decoration: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+#container
+{
+  width: 70%;
+  padding: 2cm;
+  text-align: center;
+  border: 1px solid rgb(226, 20, 20);
+  margin: 0 auto;
+}
+#container h1
+{
+    font-size: 40px;
 }
