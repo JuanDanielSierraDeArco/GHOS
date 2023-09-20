@@ -9,9 +9,9 @@ body
     text-align: center;
     font-size: 1cm;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: rgb(16, 16, 223);
-    box-shadow: 0px 2px 28px 0px rgba(233, 7, 7, 0.5);
-    color: rgb(242, 237, 237);
+    background :#f20909 50%;
+    border-radius: 32px 64px;
+    color: rgb(15, 9, 9);
     font-weight: bold;
     margin: 0;
     padding: 0.7cm;
@@ -19,21 +19,35 @@ body
 #tagline
 {   text-align: left;
     font-family: 'Courier New', Courier, monospace;
-    font-style: initial;
     padding: 0 0 0 1cm;
     font-weight: normal;
     font-size: 0.4cm;
+    color:azure;
 }
 #container
 {
-  width: 70%;
+  width: 75%;
+  height: 50%;
+  border-radius: 32px 64px;
+  font-size: 15px;
+  font-family: inherit;
+  position: center;
+  cursor:pointer;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #f20909,-6px -6px 12px #181717;
   padding: 2cm;
   text-align: center;
-  border: 1px solid rgb(226, 20, 20);
-  margin: 0 auto;
+  background-image: linear-gradient(to riggt, #0fd850 0%, #f9f047 100%);
+  transition: 1s ease;
+  display: block;
+  z-index: -1;
+
 }
 #container h1
 {
+    border: #181717;
     font-size: 20px;
     align-items: center;
+    
 }
