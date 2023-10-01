@@ -1,53 +1,63 @@
-body
-{
-    color: black;
-    text-align: center;
-    font-family: 'Lucida Sans';
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
 }
-#cabecera
-{
-    text-align: center;
-    font-size: 1cm;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background :#f20909 50%;
-    border-radius: 32px 64px;
-    color: rgb(15, 9, 9);
-    font-weight: bold;
+
+body {
+    background-color: #73768e;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     margin: 0;
-    padding: 0.7cm;
 }
-#tagline
-{   text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 0 0 0 1cm;
-    font-weight: normal;
-    font-size: 0.4cm;
-    color:azure;
+
+button {
+    background-color: #b4b7c8;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba( 0, 0, 0, 0.2);
+    color: #ffff;
+    font-size: 14px;
+    padding: 10px 30px;
 }
-#container
-{
-  width: 75%;
-  height: 50%;
-  border-radius: 32px 64px;
-  font-size: 15px;
-  font-family: inherit;
-  position: center;
-  cursor:pointer;
-  overflow: hidden;
-  z-index: 1;
-  box-shadow: 6px 6px 12px #f20909,-6px -6px 12px #181717;
-  padding: 2cm;
-  text-align: center;
-  background-image: linear-gradient(to riggt, #0fd850 0%, #f9f047 100%);
-  transition: 1s ease;
-  display: block;
-  z-index: -1;
+
+.modal-container{
+         display: flex;
+         background-color: rgba( 0, 0, 0, 0.3);
+         align-items: center;
+         justify-content: center;
+         position: fixed;
+         pointer-events: none;
+         opacity: 0;
+         top: 0;
+         left: 0;
+         height: 100vh;
+         width: 100vw;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal {
+    background-color: #ffff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 10px 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
 
 }
-#container h1
-{
-    border: #181717;
-    font-size: 20px;
-    align-items: center;
-    
+
+.modal h1 {
+    margin: 0;
+}
+
+.modal p {
+    opacity: 0.7;
+    font-size: 14px;
 }
