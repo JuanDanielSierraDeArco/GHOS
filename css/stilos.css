@@ -16,6 +16,10 @@ body
     margin: 0;
     padding: 0.7cm;
 }
+#cabecera #logo{
+    width: 35px;
+    vertical-align: middle;
+}
 #tagline
 {   text-align: left;
     font-family: 'Courier New', Courier, monospace;
